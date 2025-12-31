@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- Common appender for JSON formatted logs -->
+    <appender name="JSON_CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <includeMDC>true</includeMDC>
+            <customFields>{"application_name":"${spring.application.name}"}</customFields>
+        </encoder>
+    </appender>
+
+    <!-- Common file appender -->
+    <appender name="JSON_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/${spring.application.name:-application}.log</file>
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <includeMDC>true</includeMDC>
+            <customFields>{"application_name":"${spring.application.name}"}</customFields>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/${spring.application.name:-application}.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <!-- Async appender for better performance -->
+    <appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="JSON_FILE" />
+        <queueSize>512</queueSize>
+        <discardingThreshold>0</discardingThreshold>
+    </appender>
+
+    <!-- Default logging levels for common packages -->
+    <logger name="org.springframework" level="INFO" />
+    <logger name="org.hibernate" level="WARN" />
+    <logger name="org.apache" level="WARN" />
+
+    <!-- Root logger configuration - will be included by child configurations -->
+    <root level="INFO">
+        <appender-ref ref="JSON_CONSOLE" />
+        <appender-ref ref="ASYNC" />
+    </root>
+</configuration>

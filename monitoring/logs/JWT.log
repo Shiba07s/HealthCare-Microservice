@@ -1,0 +1,10 @@
+2025-05-21T00:08:45.558+05:30  WARN 40996 --- [JWT] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h28m24s597ms380µs800ns).
+2025-05-21T00:11:56.554+05:30  INFO 40996 --- [JWT] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-21T00:16:56.558+05:30  INFO 40996 --- [JWT] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-21T00:21:56.570+05:30  INFO 40996 --- [JWT] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-21T00:26:56.578+05:30  INFO 40996 --- [JWT] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-21T00:31:56.588+05:30  INFO 40996 --- [JWT] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-21T00:36:56.593+05:30  INFO 40996 --- [JWT] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-21T00:41:56.605+05:30  INFO 40996 --- [JWT] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-21T00:46:56.611+05:30  INFO 40996 --- [JWT] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-21T23:51:52.233+05:30  WARN 40996 --- [JWT] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23h3m46s56ms944µs600ns).

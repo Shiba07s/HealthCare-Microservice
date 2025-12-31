@@ -1,0 +1,571 @@
+{"@timestamp":"2025-04-17T11:44:21.2099576+05:30","@version":"1","message":"Starting ServiceRegistryApplication using Java 17.0.12 with PID 6064 (D:\\multi-module\\IdeaProjects\\Micro-Multi-Project\\ServiceRegistry\\target\\classes started by 2009373 in D:\\multi-module\\IdeaProjects\\Micro-Multi-Project)","logger_name":"com.service_registry.ServiceRegistryApplication","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:21.210957+05:30","@version":"1","message":"No active profile set, falling back to 1 default profile: \"default\"","logger_name":"com.service_registry.ServiceRegistryApplication","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:21.5972658+05:30","@version":"1","message":"BeanFactory id=69b30751-854e-38b6-b9d9-e60312c04631","logger_name":"org.springframework.cloud.context.scope.GenericScope","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:21.6542069+05:30","@version":"1","message":"Tomcat initialized with port 8761 (http)","logger_name":"org.springframework.boot.web.embedded.tomcat.TomcatWebServer","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:21.6542069+05:30","@version":"1","message":"Initializing ProtocolHandler [\"http-nio-8761\"]","logger_name":"org.apache.coyote.http11.Http11NioProtocol","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:21.6542069+05:30","@version":"1","message":"Starting service [Tomcat]","logger_name":"org.apache.catalina.core.StandardService","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:21.6552163+05:30","@version":"1","message":"Starting Servlet engine: [Apache Tomcat/10.1.36]","logger_name":"org.apache.catalina.core.StandardEngine","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:21.6990394+05:30","@version":"1","message":"Initializing Spring embedded WebApplicationContext","logger_name":"org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:21.6990394+05:30","@version":"1","message":"Root WebApplicationContext: initialization completed in 464 ms","logger_name":"org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:21.9038634+05:30","@version":"1","message":"Using JSON encoding codec LegacyJacksonJson","logger_name":"com.netflix.discovery.provider.DiscoveryJerseyProvider","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:21.9038634+05:30","@version":"1","message":"Using JSON decoding codec LegacyJacksonJson","logger_name":"com.netflix.discovery.provider.DiscoveryJerseyProvider","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:21.9038634+05:30","@version":"1","message":"Using XML encoding codec XStreamXml","logger_name":"com.netflix.discovery.provider.DiscoveryJerseyProvider","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:21.9038634+05:30","@version":"1","message":"Using XML decoding codec XStreamXml","logger_name":"com.netflix.discovery.provider.DiscoveryJerseyProvider","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:21.9668531+05:30","@version":"1","message":"Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.","logger_name":"org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:22.6101862+05:30","@version":"1","message":"LiveReload server is running on port 35729","logger_name":"org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:22.9295468+05:30","@version":"1","message":"Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.","logger_name":"org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger","thread_name":"restartedMain","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:44:22.931793+05:30","@version":"1","message":"Setting initial instance status as: STARTING","logger_name":"org.springframework.cloud.netflix.eureka.InstanceInfoFactory","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:22.9328201+05:30","@version":"1","message":"Initializing Eureka in region us-east-1","logger_name":"com.netflix.discovery.DiscoveryClient","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:22.9328201+05:30","@version":"1","message":"Client configured to neither register nor query for data.","logger_name":"com.netflix.discovery.DiscoveryClient","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:22.9328201+05:30","@version":"1","message":"Discovery Client initialized at timestamp 1744870462932 with initial instances count: 0","logger_name":"com.netflix.discovery.DiscoveryClient","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:22.9367816+05:30","@version":"1","message":"Initializing ...","logger_name":"com.netflix.eureka.DefaultEurekaServerContext","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:22.9367816+05:30","@version":"1","message":"The replica size seems to be empty. Check the route 53 DNS Registry","logger_name":"com.netflix.eureka.cluster.PeerEurekaNodes","thread_name":"restartedMain","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:44:22.9379545+05:30","@version":"1","message":"Finished initializing remote region registries. All known remote regions: []","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:22.9389734+05:30","@version":"1","message":"Initialized","logger_name":"com.netflix.eureka.DefaultEurekaServerContext","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:22.949935+05:30","@version":"1","message":"Exposing 18 endpoints beneath base path '/actuator'","logger_name":"org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:22.9889476+05:30","@version":"1","message":"Registering application SERVICEREGISTRY with eureka with status UP","logger_name":"org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:22.9899626+05:30","@version":"1","message":"Starting ProtocolHandler [\"http-nio-8761\"]","logger_name":"org.apache.coyote.http11.Http11NioProtocol","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:22.9899626+05:30","@version":"1","message":"isAws returned false","logger_name":"org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap","thread_name":"Thread-28","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:22.9899626+05:30","@version":"1","message":"Initialized server context","logger_name":"org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap","thread_name":"Thread-28","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:22.9919088+05:30","@version":"1","message":"Got 1 instances from neighboring DS node","logger_name":"com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl","thread_name":"Thread-28","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:22.9919088+05:30","@version":"1","message":"Renew threshold is: 1","logger_name":"com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl","thread_name":"Thread-28","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:22.9919088+05:30","@version":"1","message":"Changing status to UP","logger_name":"com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl","thread_name":"Thread-28","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:22.9929235+05:30","@version":"1","message":"Started Eureka Server","logger_name":"org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration","thread_name":"Thread-28","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:22.9999251+05:30","@version":"1","message":"Tomcat started on port 8761 (http) with context path '/'","logger_name":"org.springframework.boot.web.embedded.tomcat.TomcatWebServer","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:23.0009246+05:30","@version":"1","message":"Updating port to 8761","logger_name":"org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:23.3053606+05:30","@version":"1","message":"Started ServiceRegistryApplication in 2.475 seconds (process running for 120.942)","logger_name":"com.service_registry.ServiceRegistryApplication","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:23.3093646+05:30","@version":"1","message":"Condition evaluation unchanged","logger_name":"org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:30.3989244+05:30","@version":"1","message":"Unregistering application SERVICEREGISTRY with eureka with status DOWN","logger_name":"org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:30.4009225+05:30","@version":"1","message":"Commencing graceful shutdown. Waiting for active requests to complete","logger_name":"org.springframework.boot.web.embedded.tomcat.GracefulShutdown","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:30.4681058+05:30","@version":"1","message":"Graceful shutdown complete","logger_name":"org.springframework.boot.web.embedded.tomcat.GracefulShutdown","thread_name":"tomcat-shutdown","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:30.4711816+05:30","@version":"1","message":"Shutting down Eureka Server..","logger_name":"org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:30.4711816+05:30","@version":"1","message":"Shutting down ...","logger_name":"com.netflix.eureka.DefaultEurekaServerContext","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:30.4721087+05:30","@version":"1","message":"Shut down","logger_name":"com.netflix.eureka.DefaultEurekaServerContext","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:30.4721087+05:30","@version":"1","message":"Eureka Service is now shutdown...","logger_name":"org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:30.4721087+05:30","@version":"1","message":"Shutting down ...","logger_name":"com.netflix.eureka.DefaultEurekaServerContext","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:30.4721087+05:30","@version":"1","message":"Shut down","logger_name":"com.netflix.eureka.DefaultEurekaServerContext","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:30.4781106+05:30","@version":"1","message":"Shutting down DiscoveryClient ...","logger_name":"com.netflix.discovery.DiscoveryClient","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:30.4781106+05:30","@version":"1","message":"Completed shut down of DiscoveryClient","logger_name":"com.netflix.discovery.DiscoveryClient","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:35.2249632+05:30","@version":"1","message":"Starting ServiceRegistryApplication using Java 17.0.12 with PID 22300 (D:\\multi-module\\IdeaProjects\\Micro-Multi-Project\\ServiceRegistry\\target\\classes started by 2009373 in D:\\multi-module\\IdeaProjects\\Micro-Multi-Project)","logger_name":"com.service_registry.ServiceRegistryApplication","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:35.2551223+05:30","@version":"1","message":"No active profile set, falling back to 1 default profile: \"default\"","logger_name":"com.service_registry.ServiceRegistryApplication","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:35.3056241+05:30","@version":"1","message":"Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable","logger_name":"org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:35.3056241+05:30","@version":"1","message":"For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'","logger_name":"org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:36.5085741+05:30","@version":"1","message":"BeanFactory id=69b30751-854e-38b6-b9d9-e60312c04631","logger_name":"org.springframework.cloud.context.scope.GenericScope","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:36.9597965+05:30","@version":"1","message":"Tomcat initialized with port 8761 (http)","logger_name":"org.springframework.boot.web.embedded.tomcat.TomcatWebServer","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:36.9707976+05:30","@version":"1","message":"Initializing ProtocolHandler [\"http-nio-8761\"]","logger_name":"org.apache.coyote.http11.Http11NioProtocol","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:36.9717936+05:30","@version":"1","message":"Starting service [Tomcat]","logger_name":"org.apache.catalina.core.StandardService","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:36.9728062+05:30","@version":"1","message":"Starting Servlet engine: [Apache Tomcat/10.1.36]","logger_name":"org.apache.catalina.core.StandardEngine","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:37.0491354+05:30","@version":"1","message":"Initializing Spring embedded WebApplicationContext","logger_name":"org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:37.0491354+05:30","@version":"1","message":"Root WebApplicationContext: initialization completed in 1743 ms","logger_name":"org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:38.0447145+05:30","@version":"1","message":"Using JSON encoding codec LegacyJacksonJson","logger_name":"com.netflix.discovery.provider.DiscoveryJerseyProvider","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:38.0457122+05:30","@version":"1","message":"Using JSON decoding codec LegacyJacksonJson","logger_name":"com.netflix.discovery.provider.DiscoveryJerseyProvider","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:38.2174463+05:30","@version":"1","message":"Using XML encoding codec XStreamXml","logger_name":"com.netflix.discovery.provider.DiscoveryJerseyProvider","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:38.2180445+05:30","@version":"1","message":"Using XML decoding codec XStreamXml","logger_name":"com.netflix.discovery.provider.DiscoveryJerseyProvider","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:38.3900055+05:30","@version":"1","message":"Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.","logger_name":"org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:39.37655+05:30","@version":"1","message":"LiveReload server is running on port 35729","logger_name":"org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:39.7372499+05:30","@version":"1","message":"Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.","logger_name":"org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger","thread_name":"restartedMain","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:44:39.7542189+05:30","@version":"1","message":"Setting initial instance status as: STARTING","logger_name":"org.springframework.cloud.netflix.eureka.InstanceInfoFactory","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:39.7716429+05:30","@version":"1","message":"Initializing Eureka in region us-east-1","logger_name":"com.netflix.discovery.DiscoveryClient","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:39.7723558+05:30","@version":"1","message":"Client configured to neither register nor query for data.","logger_name":"com.netflix.discovery.DiscoveryClient","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:39.7759183+05:30","@version":"1","message":"Discovery Client initialized at timestamp 1744870479772 with initial instances count: 0","logger_name":"com.netflix.discovery.DiscoveryClient","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:39.8124067+05:30","@version":"1","message":"Initializing ...","logger_name":"com.netflix.eureka.DefaultEurekaServerContext","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:39.8144056+05:30","@version":"1","message":"The replica size seems to be empty. Check the route 53 DNS Registry","logger_name":"com.netflix.eureka.cluster.PeerEurekaNodes","thread_name":"restartedMain","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:44:39.8234114+05:30","@version":"1","message":"Finished initializing remote region registries. All known remote regions: []","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:39.8234114+05:30","@version":"1","message":"Initialized","logger_name":"com.netflix.eureka.DefaultEurekaServerContext","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:39.8344062+05:30","@version":"1","message":"Exposing 18 endpoints beneath base path '/actuator'","logger_name":"org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:39.9224376+05:30","@version":"1","message":"Registering application SERVICEREGISTRY with eureka with status UP","logger_name":"org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:39.9254374+05:30","@version":"1","message":"Starting ProtocolHandler [\"http-nio-8761\"]","logger_name":"org.apache.coyote.http11.Http11NioProtocol","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:39.9340516+05:30","@version":"1","message":"isAws returned false","logger_name":"org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap","thread_name":"Thread-15","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:39.9350754+05:30","@version":"1","message":"Initialized server context","logger_name":"org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap","thread_name":"Thread-15","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:39.9350754+05:30","@version":"1","message":"Got 1 instances from neighboring DS node","logger_name":"com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl","thread_name":"Thread-15","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:39.9350754+05:30","@version":"1","message":"Renew threshold is: 1","logger_name":"com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl","thread_name":"Thread-15","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:39.9350754+05:30","@version":"1","message":"Changing status to UP","logger_name":"com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl","thread_name":"Thread-15","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:39.9370704+05:30","@version":"1","message":"Started Eureka Server","logger_name":"org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration","thread_name":"Thread-15","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:39.9715919+05:30","@version":"1","message":"Tomcat started on port 8761 (http) with context path '/'","logger_name":"org.springframework.boot.web.embedded.tomcat.TomcatWebServer","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:39.9735891+05:30","@version":"1","message":"Updating port to 8761","logger_name":"org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:40.3644322+05:30","@version":"1","message":"Started ServiceRegistryApplication in 6.236 seconds (process running for 7.377)","logger_name":"com.service_registry.ServiceRegistryApplication","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:40.8895016+05:30","@version":"1","message":"Initializing Spring DispatcherServlet 'dispatcherServlet'","logger_name":"org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]","thread_name":"RMI TCP Connection(3)-192.168.1.23","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:40.890501+05:30","@version":"1","message":"Initializing Servlet 'dispatcherServlet'","logger_name":"org.springframework.web.servlet.DispatcherServlet","thread_name":"RMI TCP Connection(3)-192.168.1.23","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:44:40.8946201+05:30","@version":"1","message":"Completed initialization in 4 ms","logger_name":"org.springframework.web.servlet.DispatcherServlet","thread_name":"RMI TCP Connection(3)-192.168.1.23","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:45:05.3350008+05:30","@version":"1","message":"DS: Registry: lease doesn't exist, registering resource: AVAILABILITYSLOT-SERVICE - AvailabilitySlot-Service:262808f8-49d7-478d-b954-18fc152563d1","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-6","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:45:05.3350008+05:30","@version":"1","message":"DS: Registry: lease doesn't exist, registering resource: APPOINTMENT-SERVICE - Appointment-Service:97a7d59b-5195-4f23-8e9a-6d5beff1802f","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-4","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:45:05.3350008+05:30","@version":"1","message":"DS: Registry: lease doesn't exist, registering resource: DOCTOR-SERVICE - Doctor-Service:dc4edf11-5012-4560-bdcf-9035afb5efaf","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-5","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:45:05.3350008+05:30","@version":"1","message":"Not Found (Renew): AVAILABILITYSLOT-SERVICE - AvailabilitySlot-Service:262808f8-49d7-478d-b954-18fc152563d1","logger_name":"com.netflix.eureka.resources.InstanceResource","thread_name":"http-nio-8761-exec-6","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:45:05.3350008+05:30","@version":"1","message":"Not Found (Renew): APPOINTMENT-SERVICE - Appointment-Service:97a7d59b-5195-4f23-8e9a-6d5beff1802f","logger_name":"com.netflix.eureka.resources.InstanceResource","thread_name":"http-nio-8761-exec-4","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:45:05.3350008+05:30","@version":"1","message":"Not Found (Renew): DOCTOR-SERVICE - Doctor-Service:dc4edf11-5012-4560-bdcf-9035afb5efaf","logger_name":"com.netflix.eureka.resources.InstanceResource","thread_name":"http-nio-8761-exec-5","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:45:05.3699689+05:30","@version":"1","message":"DS: Registry: lease doesn't exist, registering resource: APIGATEWAY - K-B-2009373-L.Kfintech.com:ApiGateway:3030","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-10","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:45:05.3709709+05:30","@version":"1","message":"Not Found (Renew): APIGATEWAY - K-B-2009373-L.Kfintech.com:ApiGateway:3030","logger_name":"com.netflix.eureka.resources.InstanceResource","thread_name":"http-nio-8761-exec-10","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:45:05.482182+05:30","@version":"1","message":"Registered instance APPOINTMENT-SERVICE/Appointment-Service:97a7d59b-5195-4f23-8e9a-6d5beff1802f with status UP (replication=false)","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-1","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:45:05.482182+05:30","@version":"1","message":"Registered instance APIGATEWAY/K-B-2009373-L.Kfintech.com:ApiGateway:3030 with status UP (replication=false)","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-9","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:45:05.482182+05:30","@version":"1","message":"Registered instance DOCTOR-SERVICE/Doctor-Service:dc4edf11-5012-4560-bdcf-9035afb5efaf with status UP (replication=false)","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-2","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:45:05.482182+05:30","@version":"1","message":"Registered instance AVAILABILITYSLOT-SERVICE/AvailabilitySlot-Service:262808f8-49d7-478d-b954-18fc152563d1 with status UP (replication=false)","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-3","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:45:39.9370382+05:30","@version":"1","message":"Running the evict task with compensationTime 0ms","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"Eureka-EvictionTimer","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:46:25.4464256+05:30","@version":"1","message":"Registered instance APPOINTMENT-SERVICE/Appointment-Service:97a7d59b-5195-4f23-8e9a-6d5beff1802f with status DOWN (replication=false)","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-10","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:46:28.5517925+05:30","@version":"1","message":"Cancelled instance APPOINTMENT-SERVICE/Appointment-Service:97a7d59b-5195-4f23-8e9a-6d5beff1802f (replication=false)","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-3","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:46:39.9370912+05:30","@version":"1","message":"Running the evict task with compensationTime 0ms","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"Eureka-EvictionTimer","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:46:42.0036054+05:30","@version":"1","message":"Registered instance APPOINTMENT-SERVICE/Appointment-Service:39232c45-8e29-4d10-8fc0-16e689eeb5bc with status UP (replication=false)","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-3","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:47:39.9374156+05:30","@version":"1","message":"Running the evict task with compensationTime 0ms","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"Eureka-EvictionTimer","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:48:39.9461538+05:30","@version":"1","message":"Running the evict task with compensationTime 9ms","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"Eureka-EvictionTimer","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:49:39.9610566+05:30","@version":"1","message":"Running the evict task with compensationTime 14ms","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"Eureka-EvictionTimer","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:50:19.9934872+05:30","@version":"1","message":"Registered instance APPOINTMENT-SERVICE/Appointment-Service:39232c45-8e29-4d10-8fc0-16e689eeb5bc with status DOWN (replication=false)","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-4","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:50:23.1047483+05:30","@version":"1","message":"Cancelled instance APPOINTMENT-SERVICE/Appointment-Service:39232c45-8e29-4d10-8fc0-16e689eeb5bc (replication=false)","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-7","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:50:39.9613828+05:30","@version":"1","message":"Running the evict task with compensationTime 0ms","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"Eureka-EvictionTimer","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:50:44.0802449+05:30","@version":"1","message":"Registered instance APPOINTMENT-SERVICE/Appointment-Service:e1fcfa02-9ab2-4717-af30-105eae702859 with status UP (replication=false)","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-7","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:05.4531368+05:30","@version":"1","message":"Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)","logger_name":"org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener","thread_name":"File Watcher","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:05.457139+05:30","@version":"1","message":"Unregistering application SERVICEREGISTRY with eureka with status DOWN","logger_name":"org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry","thread_name":"Thread-7","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:05.460465+05:30","@version":"1","message":"Commencing graceful shutdown. Waiting for active requests to complete","logger_name":"org.springframework.boot.web.embedded.tomcat.GracefulShutdown","thread_name":"Thread-7","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:05.4614727+05:30","@version":"1","message":"Pausing ProtocolHandler [\"http-nio-8761\"]","logger_name":"org.apache.coyote.http11.Http11NioProtocol","thread_name":"tomcat-shutdown","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:05.5127999+05:30","@version":"1","message":"Graceful shutdown complete","logger_name":"org.springframework.boot.web.embedded.tomcat.GracefulShutdown","thread_name":"tomcat-shutdown","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:05.5137937+05:30","@version":"1","message":"Stopping ProtocolHandler [\"http-nio-8761\"]","logger_name":"org.apache.coyote.http11.Http11NioProtocol","thread_name":"Thread-7","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:05.5167951+05:30","@version":"1","message":"Shutting down Eureka Server..","logger_name":"org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap","thread_name":"Thread-7","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:05.5167951+05:30","@version":"1","message":"Shutting down ...","logger_name":"com.netflix.eureka.DefaultEurekaServerContext","thread_name":"Thread-7","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:05.5167951+05:30","@version":"1","message":"Shut down","logger_name":"com.netflix.eureka.DefaultEurekaServerContext","thread_name":"Thread-7","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:05.5167951+05:30","@version":"1","message":"Eureka Service is now shutdown...","logger_name":"org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap","thread_name":"Thread-7","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:05.5181822+05:30","@version":"1","message":"Shutting down ...","logger_name":"com.netflix.eureka.DefaultEurekaServerContext","thread_name":"Thread-7","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:05.5181822+05:30","@version":"1","message":"Shut down","logger_name":"com.netflix.eureka.DefaultEurekaServerContext","thread_name":"Thread-7","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:05.5231898+05:30","@version":"1","message":"Shutting down DiscoveryClient ...","logger_name":"com.netflix.discovery.DiscoveryClient","thread_name":"Thread-7","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:05.5231898+05:30","@version":"1","message":"Completed shut down of DiscoveryClient","logger_name":"com.netflix.discovery.DiscoveryClient","thread_name":"Thread-7","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:06.0145059+05:30","@version":"1","message":"Starting ServiceRegistryApplication using Java 17.0.12 with PID 22300 (D:\\multi-module\\IdeaProjects\\Micro-Multi-Project\\ServiceRegistry\\target\\classes started by 2009373 in D:\\multi-module\\IdeaProjects\\Micro-Multi-Project)","logger_name":"com.service_registry.ServiceRegistryApplication","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:06.0165055+05:30","@version":"1","message":"No active profile set, falling back to 1 default profile: \"default\"","logger_name":"com.service_registry.ServiceRegistryApplication","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:06.4451701+05:30","@version":"1","message":"BeanFactory id=69b30751-854e-38b6-b9d9-e60312c04631","logger_name":"org.springframework.cloud.context.scope.GenericScope","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:06.500464+05:30","@version":"1","message":"Tomcat initialized with port 8761 (http)","logger_name":"org.springframework.boot.web.embedded.tomcat.TomcatWebServer","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:06.5015299+05:30","@version":"1","message":"Initializing ProtocolHandler [\"http-nio-8761\"]","logger_name":"org.apache.coyote.http11.Http11NioProtocol","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:06.5015299+05:30","@version":"1","message":"Starting service [Tomcat]","logger_name":"org.apache.catalina.core.StandardService","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:06.5015299+05:30","@version":"1","message":"Starting Servlet engine: [Apache Tomcat/10.1.36]","logger_name":"org.apache.catalina.core.StandardEngine","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:06.5407942+05:30","@version":"1","message":"Initializing Spring embedded WebApplicationContext","logger_name":"org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:06.5407942+05:30","@version":"1","message":"Root WebApplicationContext: initialization completed in 521 ms","logger_name":"org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:06.7067798+05:30","@version":"1","message":"Using JSON encoding codec LegacyJacksonJson","logger_name":"com.netflix.discovery.provider.DiscoveryJerseyProvider","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:06.7082857+05:30","@version":"1","message":"Using JSON decoding codec LegacyJacksonJson","logger_name":"com.netflix.discovery.provider.DiscoveryJerseyProvider","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:06.7082857+05:30","@version":"1","message":"Using XML encoding codec XStreamXml","logger_name":"com.netflix.discovery.provider.DiscoveryJerseyProvider","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:06.7082857+05:30","@version":"1","message":"Using XML decoding codec XStreamXml","logger_name":"com.netflix.discovery.provider.DiscoveryJerseyProvider","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:06.7472845+05:30","@version":"1","message":"Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.","logger_name":"org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:07.2865126+05:30","@version":"1","message":"LiveReload server is running on port 35729","logger_name":"org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:07.6607092+05:30","@version":"1","message":"Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.","logger_name":"org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger","thread_name":"restartedMain","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:51:07.6637086+05:30","@version":"1","message":"Setting initial instance status as: STARTING","logger_name":"org.springframework.cloud.netflix.eureka.InstanceInfoFactory","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:07.6647078+05:30","@version":"1","message":"Initializing Eureka in region us-east-1","logger_name":"com.netflix.discovery.DiscoveryClient","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:07.6647078+05:30","@version":"1","message":"Client configured to neither register nor query for data.","logger_name":"com.netflix.discovery.DiscoveryClient","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:07.6647078+05:30","@version":"1","message":"Discovery Client initialized at timestamp 1744870867664 with initial instances count: 0","logger_name":"com.netflix.discovery.DiscoveryClient","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:07.6677551+05:30","@version":"1","message":"Initializing ...","logger_name":"com.netflix.eureka.DefaultEurekaServerContext","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:07.6687617+05:30","@version":"1","message":"The replica size seems to be empty. Check the route 53 DNS Registry","logger_name":"com.netflix.eureka.cluster.PeerEurekaNodes","thread_name":"restartedMain","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:51:07.6697622+05:30","@version":"1","message":"Finished initializing remote region registries. All known remote regions: []","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:07.6697622+05:30","@version":"1","message":"Initialized","logger_name":"com.netflix.eureka.DefaultEurekaServerContext","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:07.674762+05:30","@version":"1","message":"Exposing 18 endpoints beneath base path '/actuator'","logger_name":"org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:07.710403+05:30","@version":"1","message":"Registering application SERVICEREGISTRY with eureka with status UP","logger_name":"org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:07.7119083+05:30","@version":"1","message":"Starting ProtocolHandler [\"http-nio-8761\"]","logger_name":"org.apache.coyote.http11.Http11NioProtocol","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:07.7129476+05:30","@version":"1","message":"isAws returned false","logger_name":"org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap","thread_name":"Thread-28","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:07.7129476+05:30","@version":"1","message":"Initialized server context","logger_name":"org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap","thread_name":"Thread-28","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:07.7129476+05:30","@version":"1","message":"Got 1 instances from neighboring DS node","logger_name":"com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl","thread_name":"Thread-28","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:07.7129476+05:30","@version":"1","message":"Renew threshold is: 1","logger_name":"com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl","thread_name":"Thread-28","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:07.7129476+05:30","@version":"1","message":"Changing status to UP","logger_name":"com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl","thread_name":"Thread-28","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:07.7129476+05:30","@version":"1","message":"Started Eureka Server","logger_name":"org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration","thread_name":"Thread-28","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:07.7244565+05:30","@version":"1","message":"Tomcat started on port 8761 (http) with context path '/'","logger_name":"org.springframework.boot.web.embedded.tomcat.TomcatWebServer","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:07.7244565+05:30","@version":"1","message":"Updating port to 8761","logger_name":"org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:08.036795+05:30","@version":"1","message":"Started ServiceRegistryApplication in 2.42 seconds (process running for 395.05)","logger_name":"com.service_registry.ServiceRegistryApplication","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:08.0411897+05:30","@version":"1","message":"Condition evaluation unchanged","logger_name":"org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener","thread_name":"restartedMain","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:13.9686535+05:30","@version":"1","message":"Initializing Spring DispatcherServlet 'dispatcherServlet'","logger_name":"org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]","thread_name":"http-nio-8761-exec-1","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:13.9709106+05:30","@version":"1","message":"Initializing Servlet 'dispatcherServlet'","logger_name":"org.springframework.web.servlet.DispatcherServlet","thread_name":"http-nio-8761-exec-1","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:13.9734353+05:30","@version":"1","message":"Completed initialization in 2 ms","logger_name":"org.springframework.web.servlet.DispatcherServlet","thread_name":"http-nio-8761-exec-1","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:13.9944337+05:30","@version":"1","message":"DS: Registry: lease doesn't exist, registering resource: APPOINTMENT-SERVICE - Appointment-Service:e1fcfa02-9ab2-4717-af30-105eae702859","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-2","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:51:13.9944337+05:30","@version":"1","message":"Not Found (Renew): APPOINTMENT-SERVICE - Appointment-Service:e1fcfa02-9ab2-4717-af30-105eae702859","logger_name":"com.netflix.eureka.resources.InstanceResource","thread_name":"http-nio-8761-exec-2","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:51:14.0204784+05:30","@version":"1","message":"Registered instance APPOINTMENT-SERVICE/Appointment-Service:e1fcfa02-9ab2-4717-af30-105eae702859 with status UP (replication=false)","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-4","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:35.8808813+05:30","@version":"1","message":"DS: Registry: lease doesn't exist, registering resource: DOCTOR-SERVICE - Doctor-Service:dc4edf11-5012-4560-bdcf-9035afb5efaf","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-9","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:51:35.8815071+05:30","@version":"1","message":"Not Found (Renew): DOCTOR-SERVICE - Doctor-Service:dc4edf11-5012-4560-bdcf-9035afb5efaf","logger_name":"com.netflix.eureka.resources.InstanceResource","thread_name":"http-nio-8761-exec-9","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:51:35.893031+05:30","@version":"1","message":"DS: Registry: lease doesn't exist, registering resource: AVAILABILITYSLOT-SERVICE - AvailabilitySlot-Service:262808f8-49d7-478d-b954-18fc152563d1","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-10","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:51:35.8953497+05:30","@version":"1","message":"Not Found (Renew): AVAILABILITYSLOT-SERVICE - AvailabilitySlot-Service:262808f8-49d7-478d-b954-18fc152563d1","logger_name":"com.netflix.eureka.resources.InstanceResource","thread_name":"http-nio-8761-exec-10","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:51:35.9003498+05:30","@version":"1","message":"Registered instance DOCTOR-SERVICE/Doctor-Service:dc4edf11-5012-4560-bdcf-9035afb5efaf with status UP (replication=false)","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-1","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:35.90135+05:30","@version":"1","message":"DS: Registry: lease doesn't exist, registering resource: APIGATEWAY - K-B-2009373-L.Kfintech.com:ApiGateway:3030","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-3","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:51:35.90135+05:30","@version":"1","message":"Not Found (Renew): APIGATEWAY - K-B-2009373-L.Kfintech.com:ApiGateway:3030","logger_name":"com.netflix.eureka.resources.InstanceResource","thread_name":"http-nio-8761-exec-3","level":"WARN","level_value":30000}
+{"@timestamp":"2025-04-17T11:51:35.9183479+05:30","@version":"1","message":"Registered instance APIGATEWAY/K-B-2009373-L.Kfintech.com:ApiGateway:3030 with status UP (replication=false)","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-2","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:51:35.9273479+05:30","@version":"1","message":"Registered instance AVAILABILITYSLOT-SERVICE/AvailabilitySlot-Service:262808f8-49d7-478d-b954-18fc152563d1 with status UP (replication=false)","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"http-nio-8761-exec-4","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:52:07.7136846+05:30","@version":"1","message":"Running the evict task with compensationTime 0ms","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"Eureka-EvictionTimer","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:53:07.7175305+05:30","@version":"1","message":"Running the evict task with compensationTime 3ms","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"Eureka-EvictionTimer","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:53:55.4201535+05:30","@version":"1","message":"Unregistering application SERVICEREGISTRY with eureka with status DOWN","logger_name":"org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:53:55.4226831+05:30","@version":"1","message":"Commencing graceful shutdown. Waiting for active requests to complete","logger_name":"org.springframework.boot.web.embedded.tomcat.GracefulShutdown","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:53:55.4903759+05:30","@version":"1","message":"Graceful shutdown complete","logger_name":"org.springframework.boot.web.embedded.tomcat.GracefulShutdown","thread_name":"tomcat-shutdown","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:53:55.4933782+05:30","@version":"1","message":"Shutting down Eureka Server..","logger_name":"org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:53:55.4933782+05:30","@version":"1","message":"Shutting down ...","logger_name":"com.netflix.eureka.DefaultEurekaServerContext","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:53:55.4943783+05:30","@version":"1","message":"Shut down","logger_name":"com.netflix.eureka.DefaultEurekaServerContext","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:53:55.4943783+05:30","@version":"1","message":"Eureka Service is now shutdown...","logger_name":"org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:53:55.4953786+05:30","@version":"1","message":"Shutting down ...","logger_name":"com.netflix.eureka.DefaultEurekaServerContext","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:53:55.4953786+05:30","@version":"1","message":"Shut down","logger_name":"com.netflix.eureka.DefaultEurekaServerContext","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:53:55.4973799+05:30","@version":"1","message":"Shutting down DiscoveryClient ...","logger_name":"com.netflix.discovery.DiscoveryClient","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2025-04-17T11:53:55.4983781+05:30","@version":"1","message":"Completed shut down of DiscoveryClient","logger_name":"com.netflix.discovery.DiscoveryClient","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+2025-04-17T11:54:35.966+05:30  ERROR %PARSER_ERROR[pid] --- [ServiceRegistry] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@28257d6 - There is no conversion supplier registered for conversion word [pid]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@28257d6 - [pid] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@7d93d434 - There is no conversion supplier registered for conversion word [pid]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@7d93d434 - [pid] is not a valid conversion word
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:353)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.service_registry.ServiceRegistryApplication.main(ServiceRegistryApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@28257d6 - There is no conversion supplier registered for conversion word [pid]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@28257d6 - [pid] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@7d93d434 - There is no conversion supplier registered for conversion word [pid]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@7d93d434 - [pid] is not a valid conversion word
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:291)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:269)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:81)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:61)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:197)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 24 common frames omitted
+2025-04-17T12:02:49.441+05:30  ERROR %PARSER_ERROR[pid] --- [ServiceRegistry] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.color.ConverterSupplierByClassName@489da0d - Failed to instantiate converter class [org.springframework.boot.logging.logback.SpringBootPidConverter] for conversion word [pid] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.springframework.boot.logging.logback.SpringBootPidConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@244eda87 - [pid] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.color.ConverterSupplierByClassName@489da0d - Failed to instantiate converter class [org.springframework.boot.logging.logback.SpringBootPidConverter] for conversion word [pid] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.springframework.boot.logging.logback.SpringBootPidConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@3cc06a2c - [pid] is not a valid conversion word
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:353)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.service_registry.ServiceRegistryApplication.main(ServiceRegistryApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.color.ConverterSupplierByClassName@489da0d - Failed to instantiate converter class [org.springframework.boot.logging.logback.SpringBootPidConverter] for conversion word [pid] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.springframework.boot.logging.logback.SpringBootPidConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@244eda87 - [pid] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.color.ConverterSupplierByClassName@489da0d - Failed to instantiate converter class [org.springframework.boot.logging.logback.SpringBootPidConverter] for conversion word [pid] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.springframework.boot.logging.logback.SpringBootPidConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@3cc06a2c - [pid] is not a valid conversion word
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:291)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:269)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:81)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:61)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:197)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 24 common frames omitted
+	Suppressed: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.springframework.boot.logging.logback.SpringBootPidConverter
+		at ch.qos.logback.core.util.OptionHelper.instantiateByClassNameAndParameter(OptionHelper.java:69)
+		at ch.qos.logback.core.util.OptionHelper.instantiateByClassName(OptionHelper.java:44)
+		at ch.qos.logback.core.util.OptionHelper.instantiateByClassName(OptionHelper.java:33)
+		at ch.qos.logback.core.pattern.color.ConverterSupplierByClassName.get(ConverterSupplierByClassName.java:36)
+		at ch.qos.logback.core.pattern.color.ConverterSupplierByClassName.get(ConverterSupplierByClassName.java:23)
+		at ch.qos.logback.core.pattern.parser.Compiler.createConverter(Compiler.java:103)
+		at ch.qos.logback.core.pattern.parser.Compiler.compile(Compiler.java:64)
+		at ch.qos.logback.core.pattern.parser.Parser.compile(Parser.java:85)
+		at ch.qos.logback.core.pattern.PatternLayoutBase.start(PatternLayoutBase.java:143)
+		at ch.qos.logback.classic.encoder.PatternLayoutEncoder.start(PatternLayoutEncoder.java:28)
+		at ch.qos.logback.core.model.processor.ImplicitModelHandler.postHandleComplex(ImplicitModelHandler.java:207)
+		at ch.qos.logback.core.model.processor.ImplicitModelHandler.postHandle(ImplicitModelHandler.java:186)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:257)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:253)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:253)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.traversalLoop(DefaultProcessor.java:90)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.process(DefaultProcessor.java:106)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:222)
+		at org.springframework.boot.logging.logback.SpringBootJoranConfigurator.processModel(SpringBootJoranConfigurator.java:136)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:178)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.configureByResourceUrl(LogbackLoggingSystem.java:300)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.lambda$loadConfiguration$2(LogbackLoggingSystem.java:262)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.withLoggingSuppressed(LogbackLoggingSystem.java:483)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:255)
+		... 28 common frames omitted
+	Caused by: java.lang.ClassNotFoundException: org.springframework.boot.logging.logback.SpringBootPidConverter
+		at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+		at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+		at ch.qos.logback.core.util.OptionHelper.instantiateByClassNameAndParameter(OptionHelper.java:56)
+		... 53 common frames omitted
+	Suppressed: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.springframework.boot.logging.logback.SpringBootPidConverter
+		at ch.qos.logback.core.util.OptionHelper.instantiateByClassNameAndParameter(OptionHelper.java:69)
+		at ch.qos.logback.core.util.OptionHelper.instantiateByClassName(OptionHelper.java:44)
+		at ch.qos.logback.core.util.OptionHelper.instantiateByClassName(OptionHelper.java:33)
+		at ch.qos.logback.core.pattern.color.ConverterSupplierByClassName.get(ConverterSupplierByClassName.java:36)
+		at ch.qos.logback.core.pattern.color.ConverterSupplierByClassName.get(ConverterSupplierByClassName.java:23)
+		at ch.qos.logback.core.pattern.parser.Compiler.createConverter(Compiler.java:103)
+		at ch.qos.logback.core.pattern.parser.Compiler.compile(Compiler.java:64)
+		at ch.qos.logback.core.pattern.parser.Parser.compile(Parser.java:85)
+		at ch.qos.logback.core.pattern.PatternLayoutBase.start(PatternLayoutBase.java:143)
+		at ch.qos.logback.classic.encoder.PatternLayoutEncoder.start(PatternLayoutEncoder.java:28)
+		at ch.qos.logback.core.model.processor.ImplicitModelHandler.postHandleComplex(ImplicitModelHandler.java:207)
+		at ch.qos.logback.core.model.processor.ImplicitModelHandler.postHandle(ImplicitModelHandler.java:186)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:257)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:253)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:253)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.traversalLoop(DefaultProcessor.java:90)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.process(DefaultProcessor.java:106)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:222)
+		at org.springframework.boot.logging.logback.SpringBootJoranConfigurator.processModel(SpringBootJoranConfigurator.java:136)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:178)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.configureByResourceUrl(LogbackLoggingSystem.java:300)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.lambda$loadConfiguration$2(LogbackLoggingSystem.java:262)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.withLoggingSuppressed(LogbackLoggingSystem.java:483)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:255)
+		... 28 common frames omitted
+	Caused by: java.lang.ClassNotFoundException: org.springframework.boot.logging.logback.SpringBootPidConverter
+		at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+		at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+		at ch.qos.logback.core.util.OptionHelper.instantiateByClassNameAndParameter(OptionHelper.java:56)
+		... 53 common frames omitted
+2025-04-17T12:03:47.651+05:30  ERROR %PARSER_ERROR[pid] --- [ServiceRegistry] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.color.ConverterSupplierByClassName@390648b9 - Failed to instantiate converter class [org.springframework.boot.logging.logback.SpringBootPidConverter] for conversion word [pid] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.springframework.boot.logging.logback.SpringBootPidConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@3310b558 - [pid] is not a valid conversion word
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:353)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.service_registry.ServiceRegistryApplication.main(ServiceRegistryApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.color.ConverterSupplierByClassName@390648b9 - Failed to instantiate converter class [org.springframework.boot.logging.logback.SpringBootPidConverter] for conversion word [pid] ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.springframework.boot.logging.logback.SpringBootPidConverter
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@3310b558 - [pid] is not a valid conversion word
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:291)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:269)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:81)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:61)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:197)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 24 common frames omitted
+	Suppressed: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.springframework.boot.logging.logback.SpringBootPidConverter
+		at ch.qos.logback.core.util.OptionHelper.instantiateByClassNameAndParameter(OptionHelper.java:69)
+		at ch.qos.logback.core.util.OptionHelper.instantiateByClassName(OptionHelper.java:44)
+		at ch.qos.logback.core.util.OptionHelper.instantiateByClassName(OptionHelper.java:33)
+		at ch.qos.logback.core.pattern.color.ConverterSupplierByClassName.get(ConverterSupplierByClassName.java:36)
+		at ch.qos.logback.core.pattern.color.ConverterSupplierByClassName.get(ConverterSupplierByClassName.java:23)
+		at ch.qos.logback.core.pattern.parser.Compiler.createConverter(Compiler.java:103)
+		at ch.qos.logback.core.pattern.parser.Compiler.compile(Compiler.java:64)
+		at ch.qos.logback.core.pattern.parser.Parser.compile(Parser.java:85)
+		at ch.qos.logback.core.pattern.PatternLayoutBase.start(PatternLayoutBase.java:143)
+		at ch.qos.logback.classic.encoder.PatternLayoutEncoder.start(PatternLayoutEncoder.java:28)
+		at ch.qos.logback.core.model.processor.ImplicitModelHandler.postHandleComplex(ImplicitModelHandler.java:207)
+		at ch.qos.logback.core.model.processor.ImplicitModelHandler.postHandle(ImplicitModelHandler.java:186)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:257)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:253)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:253)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.traversalLoop(DefaultProcessor.java:90)
+		at ch.qos.logback.core.model.processor.DefaultProcessor.process(DefaultProcessor.java:106)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:222)
+		at org.springframework.boot.logging.logback.SpringBootJoranConfigurator.processModel(SpringBootJoranConfigurator.java:136)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:178)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.configureByResourceUrl(LogbackLoggingSystem.java:300)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.lambda$loadConfiguration$2(LogbackLoggingSystem.java:262)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.withLoggingSuppressed(LogbackLoggingSystem.java:483)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:255)
+		... 28 common frames omitted
+	Caused by: java.lang.ClassNotFoundException: org.springframework.boot.logging.logback.SpringBootPidConverter
+		at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+		at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+		at ch.qos.logback.core.util.OptionHelper.instantiateByClassNameAndParameter(OptionHelper.java:56)
+		... 53 common frames omitted
+2025-04-17 12:05:49.075 [restartedMain] INFO  c.s.ServiceRegistryApplication - Starting ServiceRegistryApplication using Java 17.0.12 with PID 41864 (D:\multi-module\IdeaProjects\Micro-Multi-Project\ServiceRegistry\target\classes started by 2009373 in D:\multi-module\IdeaProjects\Micro-Multi-Project)
+2025-04-17 12:05:49.079 [restartedMain] INFO  c.s.ServiceRegistryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-17 12:05:49.148 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-17 12:05:49.149 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-17 12:05:50.686 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=69b30751-854e-38b6-b9d9-e60312c04631
+2025-04-17 12:05:51.651 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8761 (http)
+2025-04-17 12:05:51.686 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8761"]
+2025-04-17 12:05:51.690 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-17 12:05:51.691 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-17 12:05:51.891 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-17 12:05:51.892 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2743 ms
+2025-04-17 12:05:52.916 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-04-17 12:05:52.917 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-04-17 12:05:53.108 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-04-17 12:05:53.108 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-04-17 12:05:53.311 [restartedMain] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-04-17 12:05:54.398 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2025-04-17 12:05:54.778 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-17 12:05:54.810 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-04-17 12:05:54.825 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-04-17 12:05:54.826 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+2025-04-17 12:05:54.827 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1744871754827 with initial instances count: 0
+2025-04-17 12:05:54.869 [restartedMain] INFO  c.n.e.DefaultEurekaServerContext - Initializing ...
+2025-04-17 12:05:54.872 [restartedMain] WARN  c.n.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2025-04-17 12:05:54.878 [restartedMain] INFO  c.n.e.r.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+2025-04-17 12:05:54.879 [restartedMain] INFO  c.n.e.DefaultEurekaServerContext - Initialized
+2025-04-17 12:05:54.887 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 18 endpoints beneath base path '/actuator'
+2025-04-17 12:05:54.984 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SERVICEREGISTRY with eureka with status UP
+2025-04-17 12:05:54.987 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8761"]
+2025-04-17 12:05:54.998 [Thread-13] INFO  o.s.c.n.e.s.EurekaServerBootstrap - isAws returned false
+2025-04-17 12:05:55.000 [Thread-13] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Initialized server context
+2025-04-17 12:05:55.001 [Thread-13] INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+2025-04-17 12:05:55.001 [Thread-13] INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+2025-04-17 12:05:55.002 [Thread-13] INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Changing status to UP
+2025-04-17 12:05:55.007 [Thread-13] INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
+2025-04-17 12:05:55.037 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8761 (http) with context path '/'
+2025-04-17 12:05:55.039 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8761
+2025-04-17 12:05:55.414 [restartedMain] INFO  c.s.ServiceRegistryApplication - Started ServiceRegistryApplication in 7.52 seconds (process running for 8.815)
+2025-04-17 12:05:56.058 [RMI TCP Connection(3)-192.168.1.23] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-17 12:05:56.058 [RMI TCP Connection(3)-192.168.1.23] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-17 12:05:56.063 [RMI TCP Connection(3)-192.168.1.23] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-04-17 12:06:06.954 [http-nio-8761-exec-4] WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: APIGATEWAY - K-B-2009373-L.Kfintech.com:ApiGateway:3030
+2025-04-17 12:06:06.954 [http-nio-8761-exec-3] WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: AVAILABILITYSLOT-SERVICE - AvailabilitySlot-Service:262808f8-49d7-478d-b954-18fc152563d1
+2025-04-17 12:06:06.954 [http-nio-8761-exec-4] WARN  c.n.e.resources.InstanceResource - Not Found (Renew): APIGATEWAY - K-B-2009373-L.Kfintech.com:ApiGateway:3030
+2025-04-17 12:06:06.954 [http-nio-8761-exec-3] WARN  c.n.e.resources.InstanceResource - Not Found (Renew): AVAILABILITYSLOT-SERVICE - AvailabilitySlot-Service:262808f8-49d7-478d-b954-18fc152563d1
+2025-04-17 12:06:06.956 [http-nio-8761-exec-1] WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: DOCTOR-SERVICE - Doctor-Service:dc4edf11-5012-4560-bdcf-9035afb5efaf
+2025-04-17 12:06:06.956 [http-nio-8761-exec-1] WARN  c.n.e.resources.InstanceResource - Not Found (Renew): DOCTOR-SERVICE - Doctor-Service:dc4edf11-5012-4560-bdcf-9035afb5efaf
+2025-04-17 12:06:07.175 [http-nio-8761-exec-7] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance DOCTOR-SERVICE/Doctor-Service:dc4edf11-5012-4560-bdcf-9035afb5efaf with status UP (replication=false)
+2025-04-17 12:06:07.175 [http-nio-8761-exec-8] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance APIGATEWAY/K-B-2009373-L.Kfintech.com:ApiGateway:3030 with status UP (replication=false)
+2025-04-17 12:06:07.175 [http-nio-8761-exec-10] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance AVAILABILITYSLOT-SERVICE/AvailabilitySlot-Service:262808f8-49d7-478d-b954-18fc152563d1 with status UP (replication=false)
+2025-04-17 12:06:15.055 [http-nio-8761-exec-3] WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: APPOINTMENT-SERVICE - Appointment-Service:e1fcfa02-9ab2-4717-af30-105eae702859
+2025-04-17 12:06:15.055 [http-nio-8761-exec-3] WARN  c.n.e.resources.InstanceResource - Not Found (Renew): APPOINTMENT-SERVICE - Appointment-Service:e1fcfa02-9ab2-4717-af30-105eae702859
+2025-04-17 12:06:15.072 [http-nio-8761-exec-1] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance APPOINTMENT-SERVICE/Appointment-Service:e1fcfa02-9ab2-4717-af30-105eae702859 with status UP (replication=false)
+2025-04-17 12:06:55.004 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2025-04-17 12:07:55.018 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 13ms
+2025-04-17 12:08:14.352 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application SERVICEREGISTRY with eureka with status DOWN
+2025-04-17 12:08:14.357 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-17 12:08:14.443 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-17 12:08:14.449 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Shutting down Eureka Server..
+2025-04-17 12:08:14.449 [SpringApplicationShutdownHook] INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+2025-04-17 12:08:14.450 [SpringApplicationShutdownHook] INFO  c.n.e.DefaultEurekaServerContext - Shut down
+2025-04-17 12:08:14.450 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Eureka Service is now shutdown...
+2025-04-17 12:08:14.451 [SpringApplicationShutdownHook] INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+2025-04-17 12:08:14.451 [SpringApplicationShutdownHook] INFO  c.n.e.DefaultEurekaServerContext - Shut down
+2025-04-17 12:08:14.457 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-04-17 12:08:14.457 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-04-17T12:08:19.462+05:30  ERROR %PARSER_ERROR[pid] --- [ServiceRegistry] [restartedMain] org.springframework.boot.SpringApplication    : Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@6d8d1d05 - There is no conversion supplier registered for conversion word [pid]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@6d8d1d05 - [pid] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@424dbdde - There is no conversion supplier registered for conversion word [pid]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@424dbdde - [pid] is not a valid conversion word
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:353)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.service_registry.ServiceRegistryApplication.main(ServiceRegistryApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@6d8d1d05 - There is no conversion supplier registered for conversion word [pid]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@6d8d1d05 - [pid] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@424dbdde - There is no conversion supplier registered for conversion word [pid]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@424dbdde - [pid] is not a valid conversion word
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:291)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:269)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:81)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:61)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:197)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 24 common frames omitted
+2025-04-17T12:08:57.589+05:30  ERROR %PARSER_ERROR[pid] --- [ServiceRegistry] [restartedMain] org.springframework.boot.SpringApplication    : Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@2302493d - There is no conversion supplier registered for conversion word [pid]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@2302493d - [pid] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@20e6b9e7 - There is no conversion supplier registered for conversion word [pid]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@20e6b9e7 - [pid] is not a valid conversion word
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:353)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.service_registry.ServiceRegistryApplication.main(ServiceRegistryApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@2302493d - There is no conversion supplier registered for conversion word [pid]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@2302493d - [pid] is not a valid conversion word
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@20e6b9e7 - There is no conversion supplier registered for conversion word [pid]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@20e6b9e7 - [pid] is not a valid conversion word
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:291)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:269)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:81)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:61)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:197)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 24 common frames omitted

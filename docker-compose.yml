@@ -1,0 +1,458 @@
+version: '3.8'
+
+networks:
+  healthcare-net:
+    driver: bridge
+
+volumes:
+  elasticsearch-data:
+  prometheus-data:
+  grafana-data:
+  kafka-data:
+  zookeeper-data:
+  zookeeper-logs:
+  valkey-data:
+  mysql_data:
+#  redis-data:
+  valkeysinsight-data:
+#  rancher-data:
+
+services:
+  # 1- Elasticsearch
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.12.2
+    container_name: elasticsearch
+    environment:
+      - node.name=elasticsearch
+      - cluster.name=healthcare-monitoring
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - xpack.security.enabled=false
+      - xpack.security.http.ssl.enabled=false
+
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+    networks:
+      - healthcare-net
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:9200" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    restart: unless-stopped
+
+  # 2- Logstash
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.12.2
+    container_name: logstash
+    volumes:
+      - ./monitoring/logstash/pipeline:/usr/share/logstash/pipeline
+      - ./monitoring/logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml
+    ports:
+      - "5044:5044"
+      - "5000:5000/tcp"
+      - "5000:5000/udp"
+      - "9600:9600"
+    environment:
+      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+    networks:
+      - healthcare-net
+    depends_on:
+      - elasticsearch
+    restart: unless-stopped
+
+  # 3- Kibana
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.12.2
+    container_name: kibana
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - xpack.security.enabled=false
+    ports:
+      - "5601:5601"
+    networks:
+      - healthcare-net
+    depends_on:
+      - elasticsearch
+    restart: unless-stopped
+
+  # 4- Filebeat
+  filebeat:
+    image: docker.elastic.co/beats/filebeat:8.12.2
+    container_name: filebeat
+    user: root
+    volumes:
+      - ./monitoring/filebeat/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
+      - ./monitoring/logs:/logs:ro
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    command: filebeat -e -strict.perms=false
+    networks:
+      - healthcare-net
+    depends_on:
+      - elasticsearch
+      - logstash
+    restart: unless-stopped
+
+  # 5- Prometheus for metrics collection
+  prometheus:
+    image: prom/prometheus:v2.48.1
+    container_name: prometheus
+    volumes:
+      - ./monitoring/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/usr/share/prometheus/console_libraries'
+      - '--web.console.templates=/usr/share/prometheus/consoles'
+    ports:
+      - "9090:9090"
+    networks:
+      - healthcare-net
+    restart: always
+
+  # 6- Grafana for metrics visualization
+  grafana:
+    #    image: grafana/grafana:10.2.3
+    image: grafana/grafana-oss:8.5.2
+    container_name: grafana
+    volumes:
+      - grafana-data:/var/lib/grafana
+    #      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    #      - GF_SERVER_DOMAIN=localhost
+
+    ports:
+      - "3000:3000"
+    networks:
+      - healthcare-net
+    depends_on:
+      - prometheus
+  # 7- Zookeeper
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.4.0
+    container_name: zookeeper
+    ports:
+      - "22181:2181"
+    environment:
+      ZOOKEEPER_SERVER_ID: 1
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+      ZOOKEEPER_HEAP_OPTS: "-Xmx1G -Xms512M"
+      ZOOKEEPER_4LW_COMMANDS_WHITELIST: "*"
+    volumes:
+      - zookeeper-data:/var/lib/zookeeper/data
+      - zookeeper-logs:/var/lib/zookeeper/log
+    networks:
+      - healthcare-net
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "bash", "-c", "echo srvr | nc localhost 2181"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+      start_period: 30s
+
+  # 8- Kafka
+  kafka:
+    image: confluentinc/cp-kafka:7.4.0
+    container_name: kafka
+    depends_on:
+      zookeeper:
+        condition: service_healthy
+    ports:
+      - "9092:9092"
+      - "29092:29092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://kafka:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,PLAINTEXT_INTERNAL://0.0.0.0:29092
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT_INTERNAL
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_LOG_RETENTION_HOURS: 168
+    volumes:
+      - kafka-data:/var/lib/kafka/data
+    networks:
+      - healthcare-net
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "kafka-broker-api-versions", "--bootstrap-server", "localhost:9092"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+      start_period: 40s
+
+  # 9- Kafka UI
+  kafka-ui:
+    image: provectuslabs/kafka-ui:latest
+    container_name: kafka-ui
+    depends_on:
+      kafka:
+        condition: service_healthy
+    ports:
+      - "8085:8080"
+    environment:
+      KAFKA_CLUSTERS_0_NAME: healthcare-kafka
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:29092
+      KAFKA_CLUSTERS_0_ZOOKEEPER: zookeeper:2181
+      DYNAMIC_CONFIG_ENABLED: "true"
+    networks:
+      - healthcare-net
+    restart: unless-stopped
+#  # 7- Zookeeper
+#  zookeeper:
+#    image: confluentinc/cp-zookeeper:latest
+#    container_name: zookeeper
+#    ports:
+#      - "22181:2181"
+#    environment:
+#      ZOOKEEPER_SERVER_ID: 1
+#      ZOOKEEPER_CLIENT_PORT: 2181
+#      ZOOKEEPER_TICK_TIME: 2000
+#      ZOOKEEPER_HEAP_OPTS: "-Xmx1G -Xms512M"
+#      # Enable the four letter word commands that we need
+#      ZOOKEEPER_4LW_COMMANDS_WHITELIST: "*"
+#    volumes:
+#      - zookeeper-data:/var/lib/zookeeper/data
+#      - zookeeper-logs:/var/lib/zookeeper/log
+#    networks:
+#      - healthcare-net
+#    restart: unless-stopped
+#    healthcheck:
+#      test: [ "CMD", "bash", "-c", "echo srvr | nc localhost 2181 | grep -q 'Mode:'" ]
+#      interval: 10s
+#      timeout: 5s
+#      retries: 5
+#
+#  # 8- Kafka
+#  kafka:
+#    image: confluentinc/cp-kafka:latest
+#    container_name: kafka
+#    depends_on:
+#      zookeeper:
+#        condition: service_healthy
+#    ports:
+#      - "9092:9092"
+#      - "29092:29092"
+#    environment:
+#      KAFKA_BROKER_ID: 1
+#      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+#      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+#      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT
+#      KAFKA_LISTENERS: INTERNAL://0.0.0.0:29092,EXTERNAL://0.0.0.0:9092
+#      KAFKA_ADVERTISED_LISTENERS: INTERNAL://kafka:29092,EXTERNAL://localhost:9092
+#      KAFKA_INTER_BROKER_LISTENER_NAME: INTERNAL
+#      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+#    volumes:
+#      - kafka-data:/var/lib/kafka/data
+#    networks:
+#      - healthcare-net
+#    restart: unless-stopped
+#
+#  # 9- Kafka UI
+#  kafka-ui:
+#    image: provectuslabs/kafka-ui:latest
+#    container_name: kafka-ui
+#    depends_on:
+#      - kafka
+#    ports:
+#      - "8085:8080"
+#    environment:
+#      KAFKA_CLUSTERS_0_NAME: healthcare-kafka
+#      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:29092
+#      KAFKA_CLUSTERS_0_ZOOKEEPER: zookeeper:2181
+#    networks:
+#      - healthcare-net
+#    restart: unless-stopped
+
+    # 10- Rancher (Web UI for Kubernetes cluster management)
+
+  # 10- Rancher
+#  rancher:
+#    image: rancher/rancher:latest
+#    container_name: rancher
+#    ports:
+#      - "8086:80"
+#      - "443:443"
+#    privileged: true       # 👈 This is the key line
+#
+#    restart: unless-stopped
+#    networks:
+#      - healthcare-net
+#    volumes:
+#      - rancher-data:/var/lib/rancher
+#    environment:
+#      - CATTLE_BOOTSTRAP_PASSWORD=admin
+#      - CATTLE_SYSTEM_DEFAULT_REGISTRY=
+#      - CATTLE_SYSTEM_CATALOG=bundled
+
+#11- Valkey Server - Fixed configuration
+  valkey:
+    image: valkey/valkey:latest
+    container_name: valkey
+    ports:
+      - "6380:6379"
+    volumes:
+      - valkey-data:/data
+    # Use direct command parameters instead of config file
+    command: valkey-server --appendonly yes
+    networks:
+      - healthcare-net
+    healthcheck:
+      test: [ "CMD", "valkey-cli", "ping" ]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped
+
+#12- Valkey Commander UI (using Redis Commander compatible with Valkey)
+  valkey-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: valkey-commander
+    ports:
+      - "8082:8081"
+    environment:
+      - REDIS_HOSTS=valkey:valkey:6379
+      - HTTP_USER=admin
+      - HTTP_PASSWORD=adminpassword
+      - NODE_ENV=production
+    networks:
+      - healthcare-net
+    depends_on:
+      valkey:
+        condition: service_healthy
+    restart: unless-stopped
+
+#13- RedisInsight - Using snowdreamtech image
+  valkeysinsight:
+    image: snowdreamtech/redisinsight:latest
+    container_name: valkeysinsight
+    ports:
+      - "5540:5540"
+    volumes:
+      - valkeysinsight-data:/data
+
+    environment:
+      - REDISINSIGHT_HOST=0.0.0.0
+      - REDISINSIGHT_PORT=5540
+      - HTTP_USER=admin
+      - HTTP_PASSWORD=password123
+      - REDIS_URI=redis://valkey:6379
+      - SENDANONYMOUSUSAGE=false
+    networks:
+      - healthcare-net
+    depends_on:
+      valkey:
+        condition: service_healthy
+    restart: unless-stopped
+
+
+
+#  #14- Redis Server
+#  redis:
+#    image: redis:7.0
+#    container_name: redis
+#    ports:
+#      - "6379:6379"
+#    volumes:
+#      - redis-data:/data
+#    command: redis-server --appendonly yes
+#    networks:
+#      - healthcare-net
+#    healthcheck:
+#      test: [ "CMD", "redis-cli", "ping" ]
+#      interval: 5s
+#      timeout: 3s
+#      retries: 5
+
+  #15- RedisInsight - Corrected Configuration
+#  redissinsight:
+#    image: redis/redisinsight:latest
+#    container_name: redisinsight
+#    ports:
+#      - "5540:5540"
+#    volumes:
+#      - redisinsight-data:/data
+#    networks:
+#      - healthcare-net
+#    depends_on:
+#      redis:
+#        condition: service_healthy
+#    restart: unless-stopped
+
+#16: Mysql service
+  mysql:
+    image: mysql:8.0
+    container_name: keycloak-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: keycloak
+      MYSQL_USER: keycloak
+      MYSQL_PASSWORD: password
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - healthcare-net
+    command: --default-authentication-plugin=mysql_native_password
+    restart: unless-stopped
+
+  #18: phpMyAdmin
+  mysql-ui:
+    image: phpmyadmin/phpmyadmin
+    container_name: keycloak-phpmyadmin
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: root_password
+    ports:
+      - "8083:80"
+    depends_on:
+      - mysql
+    networks:
+      - healthcare-net
+    restart: unless-stopped
+
+  #17- KeyCloak
+  keycloak:
+    image: quay.io/keycloak/keycloak:latest
+    container_name: keycloak
+    command: start-dev
+    environment:
+      KC_DB: mysql
+      KC_DB_URL: jdbc:mysql://mysql:3306/keycloak
+      KC_DB_USERNAME: keycloak
+      KC_DB_PASSWORD: password
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+    networks:
+      - healthcare-net
+    restart: unless-stopped
+
+
+  #14- Opentelemetry
+
+  #15- Zipkin
+
+  #16-SonarQube
+
+ 

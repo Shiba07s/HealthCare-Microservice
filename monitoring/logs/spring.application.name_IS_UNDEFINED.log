@@ -1,0 +1,1 @@
+{"@timestamp":"2025-12-31T17:17:28.0130349+05:30","@version":"1","message":"Running the evict task with compensationTime 70555272ms","logger_name":"com.netflix.eureka.registry.AbstractInstanceRegistry","thread_name":"Eureka-EvictionTimer","level":"INFO","level_value":20000}
