@@ -663,3 +663,26 @@ To use this authentication system:
 - Spring Cloud Gateway
 - Keycloak
 - Spring OAuth2 Resource Server
+
+# EXPORT KEYCLOAK REALM: #
+### 🔹 STEP 1: Stop Keycloak container
+```declarative
+docker stop keycloak
+
+```
+### 🔹 STEP 2: Create export directory on host
+```shell
+mkdir keycloak-export
+
+```
+### 🔹 STEP 3: Export ALL realms (optional)
+
+```java
+docker run --rm --network micro-multi-project_healthcare-net -v ${PWD}\keycloak-export:/opt/keycloak/export quay.io/keycloak/keycloak:latest export --db mysql --db-url jdbc:mysql://mysql:3306/keycloak --db-username keycloak --db-password password --dir /opt/keycloak/export --users realm_file
+```
+### 🔹 STEP 4: Export a specific realm (RECOMMENDED)
+
+```java
+docker run --rm --network micro-multi-project_healthcare-net -v D:\practo\Micro-Multi-Project\keycloak-export:/opt/keycloak/export quay.io/keycloak/keycloak:latest export --db mysql --db-url jdbc:mysql://mysql:3306/keycloak --db-username keycloak --db-password password --dir /opt/keycloak/export --users realm_file --realm healthcare-realm
+
+```
