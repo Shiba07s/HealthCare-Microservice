@@ -1,7 +1,9 @@
 package com.patient_service.config;
 
+import com.patient_service.query.dtos.QueryDatabasePayload;
 import com.zaxxer.hikari.HikariDataSource;
 import jakarta.persistence.EntityManagerFactory;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder;
 import org.springframework.context.annotation.Bean;
@@ -17,6 +19,7 @@ import javax.sql.DataSource;
 import java.util.HashMap;
 import java.util.Map;
 
+@RequiredArgsConstructor
 @Configuration
 @EnableJpaRepositories(
         basePackages = "com.patient_service.query.repository",
@@ -25,13 +28,14 @@ import java.util.Map;
 )
 public class QueryDataSourceConfig {
 
+    private final QueryDatabasePayload databasePayload;
     // Query DB (read)
     @Bean(name = "queryDataSource")
     public DataSource queryDataSource() {
         HikariDataSource dataSource = new HikariDataSource();
-        dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/patient_service_read");
-        dataSource.setUsername("root");
-        dataSource.setPassword("Ashutosh@2000");
+        dataSource.setJdbcUrl(databasePayload.getUrl());
+        dataSource.setUsername(databasePayload.getUsername());
+        dataSource.setPassword(databasePayload.getPassword());
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         return dataSource;
     }

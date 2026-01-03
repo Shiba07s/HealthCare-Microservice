@@ -1,8 +1,10 @@
 package com.patient_service.config;
 
 
+import com.patient_service.command.dtos.CommandDatabasePayload;
 import com.zaxxer.hikari.HikariDataSource;
 import jakarta.persistence.EntityManagerFactory;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder;
 import org.springframework.context.annotation.Bean;
@@ -18,6 +20,8 @@ import javax.sql.DataSource;
 import java.util.HashMap;
 import java.util.Map;
 
+
+@RequiredArgsConstructor
 @Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories(
@@ -27,14 +31,17 @@ import java.util.Map;
 )
 public class CommandDataSourceConfig {
 
+    private final CommandDatabasePayload databasePayload;
+
+
     // Command DB (write)
     @Primary
     @Bean(name = "commandDataSource")
     public DataSource commandDataSource() {
         HikariDataSource dataSource = new HikariDataSource();
-        dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/patient_service_write");
-        dataSource.setUsername("root");
-        dataSource.setPassword("Ashutosh@2000");
+        dataSource.setJdbcUrl(databasePayload.getUrl());
+        dataSource.setUsername(databasePayload.getUsername());
+        dataSource.setPassword(databasePayload.getPassword());
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         return dataSource;
     }
