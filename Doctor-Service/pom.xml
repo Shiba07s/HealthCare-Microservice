@@ -104,7 +104,7 @@
                         <image>eclipse-temurin:17-jre-alpine</image>
                     </from>
                     <to>
-                        <image>docker.io/ashu732/doctor-service</image> <!-- ✅ lowercase -->
+                        <image>docker.io/shiba07s/doctor-service</image> <!-- ✅ lowercase -->
                     </to>
                     <container>
                         <jvmFlags>

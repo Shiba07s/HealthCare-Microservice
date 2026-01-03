@@ -93,7 +93,7 @@
                         <image>eclipse-temurin:17-jre-alpine</image>
                     </from>
                     <to>
-                        <image>docker.io/ashu732/authservice</image> <!-- ✅ lowercase -->
+                        <image>docker.io/shiba07s/authservice</image> <!-- ✅ lowercase -->
                     </to>
                     <container>
                         <jvmFlags>

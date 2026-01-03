@@ -88,7 +88,7 @@
                         <image>eclipse-temurin:17-jre-alpine</image>
                     </from>
                     <to>
-                        <image>docker.io/ashu732/apigateway</image> <!-- ✅ lowercase -->
+                        <image>docker.io/shiba07s/apigateway</image> <!-- ✅ lowercase -->
                     </to>
                     <container>
                         <jvmFlags>

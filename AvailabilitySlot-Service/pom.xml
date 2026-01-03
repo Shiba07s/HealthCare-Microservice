@@ -89,7 +89,7 @@
 						<image>eclipse-temurin:17-jre-alpine</image>
 					</from>
 					<to>
-						<image>docker.io/ashu732/availabilityslot-service</image> <!-- ✅ lowercase -->
+						<image>docker.io/shiba07s/availabilityslot-service</image> <!-- ✅ lowercase -->
 					</to>
 					<container>
 						<jvmFlags>

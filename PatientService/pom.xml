@@ -85,6 +85,8 @@
     </dependencies>
 
     <build>
+        <finalName>patient-service</finalName>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -101,7 +103,7 @@
                         <image>eclipse-temurin:17-jre-alpine</image>
                     </from>
                     <to>
-                        <image>docker.io/ashu732/patient-service</image> <!-- ✅ lowercase -->
+                        <image>docker.io/shiba07s/patient-service</image> <!-- ✅ lowercase -->
                     </to>
                     <container>
                         <jvmFlags>
