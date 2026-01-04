@@ -1,0 +1,514 @@
+2026-01-03T22:40:41.242+05:30  INFO 31524 --- [Patient-Service] [main] c.p.PatientServiceApplicationTests       : Starting PatientServiceApplicationTests using Java 22.0.1 with PID 31524 (started by Ashutosh in D:\practo\Micro-Multi-Project\PatientService)
+2026-01-03T22:40:41.245+05:30  INFO 31524 --- [Patient-Service] [main] c.p.PatientServiceApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2026-01-03T22:40:43.973+05:30  INFO 31524 --- [Patient-Service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-03T22:40:43.973+05:30  INFO 31524 --- [Patient-Service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-03T22:40:44.254+05:30  INFO 31524 --- [Patient-Service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 261 ms. Found 1 JPA repository interface.
+2026-01-03T22:40:44.259+05:30  INFO 31524 --- [Patient-Service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-03T22:40:44.260+05:30  INFO 31524 --- [Patient-Service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-03T22:40:44.278+05:30  INFO 31524 --- [Patient-Service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2026-01-03T22:40:45.404+05:30  INFO 31524 --- [Patient-Service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-01-03T22:40:45.408+05:30  INFO 31524 --- [Patient-Service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-01-03T22:40:45.467+05:30  INFO 31524 --- [Patient-Service] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.patient_service.command.repository.PatientCommandRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-01-03T22:40:45.468+05:30  INFO 31524 --- [Patient-Service] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.patient_service.query.repository.PatientQueryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-01-03T22:40:45.470+05:30  INFO 31524 --- [Patient-Service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
+2026-01-03T22:40:46.324+05:30  INFO 31524 --- [Patient-Service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=494e4677-3ba1-3567-a9f5-6dcf9244a1dc
+2026-01-03T22:40:47.930+05:30  INFO 31524 --- [Patient-Service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: command]
+2026-01-03T22:40:48.218+05:30  INFO 31524 --- [Patient-Service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-01-03T22:40:48.380+05:30  INFO 31524 --- [Patient-Service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-03T22:40:48.898+05:30  INFO 31524 --- [Patient-Service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-03T22:40:48.943+05:30  INFO 31524 --- [Patient-Service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-03T22:40:49.469+05:30  INFO 31524 --- [Patient-Service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5bed0ff4
+2026-01-03T22:40:49.472+05:30  INFO 31524 --- [Patient-Service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-03T22:40:49.569+05:30  WARN 31524 --- [Patient-Service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-03T22:40:49.609+05:30  INFO 31524 --- [Patient-Service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-03T22:40:49.628+05:30 DEBUG 31524 --- [Patient-Service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@407d2a01) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@461b38ca)
+2026-01-03T22:40:49.630+05:30 DEBUG 31524 --- [Patient-Service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1387bd84) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3881b884)
+2026-01-03T22:40:49.630+05:30 DEBUG 31524 --- [Patient-Service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1185b0b7) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@ec70725)
+2026-01-03T22:40:49.631+05:30 DEBUG 31524 --- [Patient-Service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2082e0e4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@15f229e8)
+2026-01-03T22:40:49.631+05:30 DEBUG 31524 --- [Patient-Service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@29ce33e9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1f86f7da)
+2026-01-03T22:40:49.631+05:30 DEBUG 31524 --- [Patient-Service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@28b4b10e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2c0d7099)
+2026-01-03T22:40:49.631+05:30 DEBUG 31524 --- [Patient-Service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@74844f8a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5c945ee7)
+2026-01-03T22:40:49.632+05:30 DEBUG 31524 --- [Patient-Service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@51a5a8ba) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@16eb93af)
+2026-01-03T22:40:49.632+05:30 DEBUG 31524 --- [Patient-Service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@404566e7) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3ed87b6e)
+2026-01-03T22:40:51.061+05:30  INFO 31524 --- [Patient-Service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-03T22:40:51.127+05:30  INFO 31524 --- [Patient-Service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'command'
+2026-01-03T22:40:51.263+05:30  INFO 31524 --- [Patient-Service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: query]
+2026-01-03T22:40:51.269+05:30  INFO 31524 --- [Patient-Service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-03T22:40:51.285+05:30  INFO 31524 --- [Patient-Service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-03T22:40:51.287+05:30  INFO 31524 --- [Patient-Service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-01-03T22:40:51.319+05:30  INFO 31524 --- [Patient-Service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33acec5e
+2026-01-03T22:40:51.319+05:30  INFO 31524 --- [Patient-Service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-01-03T22:40:51.324+05:30  WARN 31524 --- [Patient-Service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-03T22:40:51.325+05:30  INFO 31524 --- [Patient-Service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-03T22:40:51.327+05:30 DEBUG 31524 --- [Patient-Service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@40ff56f7) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@64648af1)
+2026-01-03T22:40:51.328+05:30 DEBUG 31524 --- [Patient-Service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@42d65ffc) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4adb2b87)
+2026-01-03T22:40:51.328+05:30 DEBUG 31524 --- [Patient-Service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@70a984c5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@30dabb23)
+2026-01-03T22:40:51.329+05:30 DEBUG 31524 --- [Patient-Service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@40032b7b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5317a7ef)
+2026-01-03T22:40:51.329+05:30 DEBUG 31524 --- [Patient-Service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6fa48ee4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@a422390)
+2026-01-03T22:40:51.329+05:30 DEBUG 31524 --- [Patient-Service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@53c39950) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3d056418)
+2026-01-03T22:40:51.329+05:30 DEBUG 31524 --- [Patient-Service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@769d0ef2) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6d58ed12)
+2026-01-03T22:40:51.330+05:30 DEBUG 31524 --- [Patient-Service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@221ef0f0) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@34ad750f)
+2026-01-03T22:40:51.330+05:30 DEBUG 31524 --- [Patient-Service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2a5917f6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@c34fd2)
+2026-01-03T22:40:51.417+05:30  INFO 31524 --- [Patient-Service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-03T22:40:51.448+05:30  INFO 31524 --- [Patient-Service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'query'
+2026-01-03T22:40:54.380+05:30  WARN 31524 --- [Patient-Service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-03T22:40:57.443+05:30  INFO 31524 --- [Patient-Service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
+2026-01-03T22:41:00.311+05:30  INFO 31524 --- [Patient-Service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-01-03T22:41:00.466+05:30  WARN 31524 --- [Patient-Service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-03T22:41:00.728+05:30  INFO 31524 --- [Patient-Service] [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = Patient-Service-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2026-01-03T22:41:01.077+05:30  INFO 31524 --- [Patient-Service] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2026-01-03T22:41:01.077+05:30  INFO 31524 --- [Patient-Service] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2026-01-03T22:41:01.077+05:30  INFO 31524 --- [Patient-Service] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1767460261074
+2026-01-03T22:41:01.248+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:01.252+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:01.365+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:01.366+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:01.471+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:01.472+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:01.690+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:01.691+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:02.129+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:02.129+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:02.999+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:02.999+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:03.966+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:03.967+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:05.059+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:05.061+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:06.046+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:06.046+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:06.998+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:06.998+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:07.879+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:07.881+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:08.958+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:08.958+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:10.036+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:10.037+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:11.139+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:11.142+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:12.253+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:12.258+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:13.344+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:13.345+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:14.436+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:14.438+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:15.542+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:15.542+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:16.627+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:16.628+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:17.688+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:17.689+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:18.785+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:18.786+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:19.762+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:19.764+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:20.833+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:20.835+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:21.800+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:21.801+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:22.891+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:22.893+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:23.953+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:23.955+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:25.027+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:25.027+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:26.117+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:26.117+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:26.993+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:26.994+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:28.052+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:28.054+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:29.142+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:29.143+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:30.013+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:30.013+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:31.099+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] o.a.k.c.a.i.AdminMetadataManager         : [AdminClient clientId=Patient-Service-admin-0] Metadata update failed
+
+org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment. Call: fetchMetadata
+
+2026-01-03T22:41:31.172+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:31.178+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:31.129+05:30 ERROR 31524 --- [Patient-Service] [main] o.springframework.kafka.core.KafkaAdmin  : Could not configure topics
+
+org.springframework.kafka.KafkaException: Timed out waiting to get existing topics
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$13(KafkaAdmin.java:539) ~[spring-kafka-3.2.0.jar:3.2.0]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429) ~[na:na]
+	at java.base/java.util.Collections$UnmodifiableMap.forEach(Collections.java:1708) ~[na:na]
+	at org.springframework.kafka.core.KafkaAdmin.checkPartitions(KafkaAdmin.java:518) ~[spring-kafka-3.2.0.jar:3.2.0]
+	at org.springframework.kafka.core.KafkaAdmin.addOrModifyTopicsIfNeeded(KafkaAdmin.java:411) ~[spring-kafka-3.2.0.jar:3.2.0]
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:263) ~[spring-kafka-3.2.0.jar:3.2.0]
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:227) ~[spring-kafka-3.2.0.jar:3.2.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1083) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.4.3.jar:3.4.3]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.3.jar:6.2.3]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.3.jar:6.2.3]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553) ~[spring-boot-test-3.4.3.jar:3.4.3]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.4.3.jar:3.4.3]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.4.3.jar:3.4.3]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.2.3.jar:6.2.3]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.2.3.jar:6.2.3]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.2.3.jar:6.2.3]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200) ~[spring-test-6.2.3.jar:6.2.3]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139) ~[spring-test-6.2.3.jar:6.2.3]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.2.3.jar:6.2.3]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160) ~[spring-test-6.2.3.jar:6.2.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:194) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:212) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:556) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:611) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.11.4.jar:5.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.11.4.jar:1.11.4]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) ~[surefire-junit-platform-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184) ~[surefire-junit-platform-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148) ~[surefire-junit-platform-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122) ~[surefire-junit-platform-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.5.2.jar:3.5.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.5.2.jar:3.5.2]
+Caused by: java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095) ~[na:na]
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:180) ~[kafka-clients-3.8.1.jar:na]
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$13(KafkaAdmin.java:521) ~[spring-kafka-3.2.0.jar:3.2.0]
+	... 96 common frames omitted
+
+2026-01-03T22:41:32.227+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:32.228+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:33.111+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:33.111+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:34.198+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:34.198+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:35.289+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:35.290+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:36.162+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:36.164+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:37.139+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:37.139+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:38.225+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:38.225+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:39.205+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:39.205+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:40.185+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Node -1 disconnected.
+2026-01-03T22:41:40.185+05:30  WARN 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] org.apache.kafka.clients.NetworkClient   : [AdminClient clientId=Patient-Service-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:41.239+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] o.a.k.clients.admin.KafkaAdminClient     : [AdminClient clientId=Patient-Service-admin-0] Forcing a hard I/O thread shutdown. Requests in progress will be aborted.
+2026-01-03T22:41:41.247+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for Patient-Service-admin-0 unregistered
+2026-01-03T22:41:41.249+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] o.a.k.c.a.i.AdminMetadataManager         : [AdminClient clientId=Patient-Service-admin-0] Metadata update failed
+
+org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited. Call: fetchMetadata
+
+2026-01-03T22:41:41.250+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] o.a.k.clients.admin.KafkaAdminClient     : [AdminClient clientId=Patient-Service-admin-0] Timed out 2 remaining operation(s) during close.
+2026-01-03T22:41:41.256+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2026-01-03T22:41:41.257+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-01-03T22:41:41.257+05:30  INFO 31524 --- [Patient-Service] [kafka-admin-client-thread | Patient-Service-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2026-01-03T22:41:41.376+05:30  INFO 31524 --- [Patient-Service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-01-03T22:41:41.465+05:30  INFO 31524 --- [Patient-Service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-01-03T22:41:41.478+05:30  INFO 31524 --- [Patient-Service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-03T22:41:41.494+05:30  INFO 31524 --- [Patient-Service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-01-03T22:41:41.494+05:30  INFO 31524 --- [Patient-Service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-01-03T22:41:41.496+05:30  INFO 31524 --- [Patient-Service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-01-03T22:41:41.496+05:30  INFO 31524 --- [Patient-Service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-01-03T22:41:41.496+05:30  INFO 31524 --- [Patient-Service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-01-03T22:41:41.496+05:30  INFO 31524 --- [Patient-Service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-01-03T22:41:41.496+05:30  INFO 31524 --- [Patient-Service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-01-03T22:41:42.087+05:30  INFO 31524 --- [Patient-Service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-01-03T22:41:42.092+05:30  INFO 31524 --- [Patient-Service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-01-03T22:41:42.097+05:30  INFO 31524 --- [Patient-Service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-03T22:41:42.100+05:30  INFO 31524 --- [Patient-Service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1767460302099 with initial instances count: 2
+2026-01-03T22:41:42.113+05:30  INFO 31524 --- [Patient-Service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PATIENT-SERVICE with eureka with status UP
+2026-01-03T22:41:42.114+05:30  INFO 31524 --- [Patient-Service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1767460302114, current=UP, previous=STARTING]
+2026-01-03T22:41:42.117+05:30  INFO 31524 --- [Patient-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PATIENT-SERVICE/Patient-Service:e79b0a9b-3c16-4c05-ad30-3e91edacdf6d: registering service...
+2026-01-03T22:41:42.221+05:30  INFO 31524 --- [Patient-Service] [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-patient-service-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = patient-service-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2026-01-03T22:41:42.268+05:30  INFO 31524 --- [Patient-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PATIENT-SERVICE/Patient-Service:e79b0a9b-3c16-4c05-ad30-3e91edacdf6d - registration status: 204
+2026-01-03T22:41:42.335+05:30  INFO 31524 --- [Patient-Service] [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2026-01-03T22:41:42.425+05:30  INFO 31524 --- [Patient-Service] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2026-01-03T22:41:42.428+05:30  INFO 31524 --- [Patient-Service] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2026-01-03T22:41:42.428+05:30  INFO 31524 --- [Patient-Service] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1767460302425
+2026-01-03T22:41:42.433+05:30  INFO 31524 --- [Patient-Service] [main] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-patient-service-group-1, groupId=patient-service-group] Subscribed to topic(s): patient-events4
+2026-01-03T22:41:42.482+05:30  INFO 31524 --- [Patient-Service] [main] c.p.PatientServiceApplicationTests       : Started PatientServiceApplicationTests in 62.325 seconds (process running for 65.142)
+2026-01-03T22:41:42.996+05:30  INFO 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-patient-service-group-1, groupId=patient-service-group] Node -1 disconnected.
+2026-01-03T22:41:42.997+05:30  WARN 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-patient-service-group-1, groupId=patient-service-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:42.997+05:30  WARN 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-patient-service-group-1, groupId=patient-service-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-01-03T22:41:43.126+05:30  INFO 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-patient-service-group-1, groupId=patient-service-group] Node -1 disconnected.
+2026-01-03T22:41:43.127+05:30  WARN 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-patient-service-group-1, groupId=patient-service-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:43.127+05:30  WARN 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-patient-service-group-1, groupId=patient-service-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-01-03T22:41:43.252+05:30  INFO 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-patient-service-group-1, groupId=patient-service-group] Node -1 disconnected.
+2026-01-03T22:41:43.252+05:30  WARN 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-patient-service-group-1, groupId=patient-service-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:43.253+05:30  WARN 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-patient-service-group-1, groupId=patient-service-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-01-03T22:41:43.452+05:30  INFO 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-patient-service-group-1, groupId=patient-service-group] Node -1 disconnected.
+2026-01-03T22:41:43.452+05:30  WARN 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-patient-service-group-1, groupId=patient-service-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2026-01-03T22:41:43.452+05:30  WARN 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-patient-service-group-1, groupId=patient-service-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-01-03T22:41:43.680+05:30  INFO 31524 --- [Patient-Service] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PATIENT-SERVICE with eureka with status DOWN
+2026-01-03T22:41:43.687+05:30  INFO 31524 --- [Patient-Service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1767460303687, current=DOWN, previous=UP]
+2026-01-03T22:41:43.688+05:30  INFO 31524 --- [Patient-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PATIENT-SERVICE/Patient-Service:e79b0a9b-3c16-4c05-ad30-3e91edacdf6d: registering service...
+2026-01-03T22:41:43.700+05:30  INFO 31524 --- [Patient-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PATIENT-SERVICE/Patient-Service:e79b0a9b-3c16-4c05-ad30-3e91edacdf6d - registration status: 204
+2026-01-03T22:41:43.708+05:30  INFO 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-patient-service-group-1, groupId=patient-service-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-01-03T22:41:43.708+05:30  INFO 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-patient-service-group-1, groupId=patient-service-group] Request joining group due to: consumer pro-actively leaving the group
+2026-01-03T22:41:43.708+05:30  INFO 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-patient-service-group-1, groupId=patient-service-group] Unsubscribed all topics or patterns and assigned partitions
+2026-01-03T22:41:43.710+05:30  INFO 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-patient-service-group-1, groupId=patient-service-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2026-01-03T22:41:43.710+05:30  INFO 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-patient-service-group-1, groupId=patient-service-group] Request joining group due to: consumer pro-actively leaving the group
+2026-01-03T22:41:43.715+05:30  INFO 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2026-01-03T22:41:43.716+05:30  INFO 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2026-01-03T22:41:43.716+05:30  INFO 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2026-01-03T22:41:43.716+05:30  INFO 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2026-01-03T22:41:43.727+05:30  INFO 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-patient-service-group-1 unregistered
+2026-01-03T22:41:43.729+05:30  INFO 31524 --- [Patient-Service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : patient-service-group: Consumer stopped
+2026-01-03T22:41:43.937+05:30  INFO 31524 --- [Patient-Service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'query'
+2026-01-03T22:41:43.941+05:30  INFO 31524 --- [Patient-Service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-01-03T22:41:43.962+05:30  INFO 31524 --- [Patient-Service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-01-03T22:41:43.962+05:30  INFO 31524 --- [Patient-Service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'command'
+2026-01-03T22:41:43.963+05:30  INFO 31524 --- [Patient-Service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-01-03T22:41:43.978+05:30  INFO 31524 --- [Patient-Service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-01-03T22:41:43.979+05:30  INFO 31524 --- [Patient-Service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-01-03T22:41:46.994+05:30  INFO 31524 --- [Patient-Service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-01-03T22:41:47.011+05:30  INFO 31524 --- [Patient-Service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PATIENT-SERVICE/Patient-Service:e79b0a9b-3c16-4c05-ad30-3e91edacdf6d - deregister  status: 200
+2026-01-03T22:41:47.012+05:30  INFO 31524 --- [Patient-Service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
