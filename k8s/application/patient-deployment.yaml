@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: patient-service-k8s-deploy
+  namespace: healthcare-k8s
+
+spec:
+  selector:
+    matchLabels:
+      app: patient-service-k8s-deploy
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: patient-service-k8s-deploy
+    spec:
+      containers:
+        - name: patient-service-k8s
+          image: shiba07s/patient-service:latest
+          ports:
+            - containerPort: 3031
+          env:   # Setting Enviornmental Variables
+            - name: DB_HOST   # Setting Database host address from configMap
+              value: mysql
+
+            - name: PATIENT_COMMAND_DB_NAME  # Setting Database name from configMap
+              value: patient_service_write
+
+            - name: PATIENT_QUERY_DB_NAME  # Setting Database name from configMap
+              value: patient_service_read
+
+            - name: DB_USERNAME  # Setting Database username from Secret
+              value: root
+
+            - name: DB_PASSWORD # Setting Database password from Secret
+              value: Ashutosh@2000

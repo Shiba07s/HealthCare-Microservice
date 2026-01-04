@@ -20,6 +20,11 @@ Google JIB is used for efficient containerization of our microservices:
 # Build and push Docker images to Docker Hub
 mvn compile jib:build  
 ```
+### Push only the failed service (DO NOT rebuild all)
+```shell
+mvn compile jib:build -rf :AvailabilitySlot-Service
+
+```
 
 ### Managing the Monitoring Stack
 
@@ -680,7 +685,8 @@ mkdir keycloak-export
 ```java
 docker run --rm --network micro-multi-project_healthcare-net -v ${PWD}\keycloak-export:/opt/keycloak/export quay.io/keycloak/keycloak:latest export --db mysql --db-url jdbc:mysql://mysql:3306/keycloak --db-username keycloak --db-password password --dir /opt/keycloak/export --users realm_file
 ```
-### 🔹 STEP 4: Export a specific realm (RECOMMENDED)
+
+###  🔹 STEP 4: Export a specific realm (RECOMMENDED)
 
 ```java
 docker run --rm --network micro-multi-project_healthcare-net -v D:\practo\Micro-Multi-Project\keycloak-export:/opt/keycloak/export quay.io/keycloak/keycloak:latest export --db mysql --db-url jdbc:mysql://mysql:3306/keycloak --db-username keycloak --db-password password --dir /opt/keycloak/export --users realm_file --realm healthcare-realm
