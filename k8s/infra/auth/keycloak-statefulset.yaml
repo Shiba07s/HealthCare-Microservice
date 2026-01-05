@@ -1,0 +1,74 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: keycloak
+  namespace: healthcare-k8s
+spec:
+  serviceName: keycloak-discovery
+  replicas: 2
+  selector:
+    matchLabels:
+      app: keycloak
+  template:
+    metadata:
+      labels:
+        app: keycloak
+    spec:
+      containers:
+        - name: keycloak
+          image: quay.io/keycloak/keycloak:26.4.7
+          args: ["start"]
+          ports:
+            - name: http
+              containerPort: 8080
+            - name: jgroups
+              containerPort: 7800
+
+          env:
+            # 🔐 Admin user
+            - name: KC_BOOTSTRAP_ADMIN_USERNAME
+              value: admin
+            - name: KC_BOOTSTRAP_ADMIN_PASSWORD
+              value: admin
+
+            # 🌐 HTTP
+            - name: KC_HTTP_ENABLED
+              value: "true"
+            - name: KC_HOSTNAME_STRICT
+              value: "false"
+            - name: KC_PROXY_HEADERS
+              value: xforwarded
+            - name: KC_HEALTH_ENABLED
+              value: "true"
+
+            # 🧠 Cache (required for multiple replicas)
+            - name: KC_CACHE
+              value: ispn
+
+            # 🟢 MySQL CONFIG (IMPORTANT)
+            - name: KC_DB
+              value: mysql
+            - name: KC_DB_URL_HOST
+              value: mysql
+            - name: KC_DB_URL_PORT
+              value: "3306"
+            - name: KC_DB_URL_DATABASE
+              value: keycloak
+
+            - name: KC_DB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: keycloak-mysql-secret
+                  key: admin-username
+            - name: KC_DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: keycloak-mysql-secret
+                  key: admin-password
+      resources:
+        requests:
+          memory: "512Mi"
+          cpu: "250m"
+        limits:
+          memory: "1Gi"
+          cpu: "500m"

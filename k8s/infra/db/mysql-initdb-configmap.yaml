@@ -8,7 +8,24 @@ data:
     CREATE DATABASE IF NOT EXISTS patient_service_write;
     CREATE DATABASE IF NOT EXISTS patient_service_read;
     CREATE DATABASE IF NOT EXISTS keycloak;
+
     GRANT ALL PRIVILEGES ON patient_service_write.* TO 'root'@'%';
     GRANT ALL PRIVILEGES ON patient_service_read.* TO 'root'@'%';
     GRANT ALL PRIVILEGES ON keycloak.* TO 'root'@'%';
+
     FLUSH PRIVILEGES;
+
+#apiVersion: v1
+#kind: ConfigMap
+#metadata:
+#  name: mysql-initdb-config
+#  namespace: healthcare-k8s
+#data:
+#  init.sql: |
+#    CREATE DATABASE IF NOT EXISTS patient_service_write;
+#    CREATE DATABASE IF NOT EXISTS patient_service_read;
+#    CREATE DATABASE IF NOT EXISTS keycloak;
+#    GRANT ALL PRIVILEGES ON patient_service_write.* TO 'root'@'%';
+#    GRANT ALL PRIVILEGES ON patient_service_read.* TO 'root'@'%';
+#    GRANT ALL PRIVILEGES ON keycloak.* TO 'root'@'%';
+#    FLUSH PRIVILEGES;

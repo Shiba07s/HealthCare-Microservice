@@ -27,7 +27,7 @@ spec:
             - name: KC_DB
               value: "mysql"
             - name: KC_DB_URL
-              value: "jdbc:mysql://mysql:3306/keycloak"
+              value: "jdbc:mysql://mysql/keycloak"
             - name: KC_DB_USERNAME
               valueFrom:
                 secretKeyRef:
@@ -55,20 +55,8 @@ spec:
           ports:
             - name: http
               containerPort: 8080
-          readinessProbe:
-            httpGet:
-              path: /health/ready
-              port: 8080
-            initialDelaySeconds: 60
-            periodSeconds: 10
-          livenessProbe:
-            httpGet:
-              path: /health/live
-              port: 8080
-            initialDelaySeconds: 180
-            periodSeconds: 30
-            timeoutSeconds: 5
-            failureThreshold: 10
+
+
           resources:
             requests:
               memory: "512Mi"
